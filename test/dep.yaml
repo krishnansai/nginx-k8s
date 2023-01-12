@@ -1,8 +1,6 @@
 apiVersion: argoproj.io/v1alpha1 # Changed from apps/v1
 kind: Rollout # Changed from Deployment
 # --- Everything below this comment is the same as a deployment ---
-metadata:
-  name: example-rollout
 spec:
   replicas: 1
   selector:
