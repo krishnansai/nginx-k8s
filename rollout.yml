@@ -1,14 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
+metadata:
+  name: nginx-green
 spec:
-  strategy:
-    blueGreen:
-    activeMetadata:
-      labels:
-        role: active
-    previewMetadata:
-      labels:
-        role: preview
   workloadRef:
     apiVersion: apps/v1
     kind: Deployment
