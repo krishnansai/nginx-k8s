@@ -1,6 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 spec:
+strategy:
+  blueGreen:
+    activeMetadata:
+      labels:
+        role: active
+    previewMetadata:
+      labels:
+        role: preview
   workloadRef:
     apiVersion: apps/v1
     kind: Deployment
