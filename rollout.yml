@@ -1,8 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 spec:
-strategy:
-  blueGreen:
+  strategy:
+    blueGreen:
     activeMetadata:
       labels:
         role: active
