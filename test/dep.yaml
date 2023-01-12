@@ -68,9 +68,6 @@ spec:
 
   # The rollback window provides a way to fast track deployments to
   # previously deployed versions.
-  # Optional, and by default is not set.
-  rollbackWindow:
-    revisions: 3
 
   strategy:
 
