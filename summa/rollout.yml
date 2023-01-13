@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: rollouts-baseline
-          image: nginx:1.14.4
+          image: nginx:1.14.2
           imagePullPolicy: Always
           ports:
             - containerPort: 80
