@@ -4,7 +4,7 @@ metadata:
   name: oes-argo-rollout
 spec:
   replicas: 1
-  revisionHistoryLimit: 1
+  revisionHistoryLimit: 2
   selector:
     matchLabels:
       app: oes-argo-rollout
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: rollouts-baseline
-          image: nginx:1
+          image: nginx:1.23.3
           imagePullPolicy: Always
           ports:
             - containerPort: 80
